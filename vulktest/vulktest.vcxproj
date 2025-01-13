@@ -145,7 +145,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\samps\glvulk.cpp" />
     <ClCompile Include="deps\include\vulkan\vulkan.cppm" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -201,7 +200,10 @@
     <Library Include="deps\lib\vulkan-1.lib" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="compile.bat" />
     <None Include="makefile" />
+    <None Include="shaders\shader.frag" />
+    <None Include="shaders\shader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
